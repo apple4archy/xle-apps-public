@@ -4,24 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>XLE Apps｜公开产品页</title>
-  <meta name="description" content="XLE Apps 的公开产品页面。收录睡眠声音 SleepAudio、工位求生：摸鱼模式、秒格 Blinklog 等 App 的产品介绍、隐私说明和上架材料入口。">
+  <meta name="description" content="XLE Apps 的公开产品页面。收录睡眠声音 SleepAudio、工位求生：摸鱼模式、秒格 Blinklog，以及准备上架的记了 Jotted。">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .app-icon.jotted-mark{display:grid;place-items:center;background:#1c1917;color:#f6efe4;font-size:34px;font-weight:600;letter-spacing:-1px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+    .name{white-space:nowrap}
+    @media(min-width:960px){.apps-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:720px){
+      .nav{height:auto}
+      .nav-inner{height:auto;min-height:48px;flex-wrap:wrap;align-items:flex-start;padding:10px 16px;gap:8px}
+      .nav-links{width:100%;flex-wrap:wrap;justify-content:flex-start;gap:8px 14px}
+    }
+  </style>
 </head>
 <body>
-  <nav class="nav"><div class="nav-inner"><a class="brand" href="./">XLE Apps</a><div class="nav-links"><a href="#apps">Apps</a><a href="apps/sleepaudio/">SleepAudio</a><a href="apps/fishbreak/">工位求生</a><a href="apps/blinklog/">秒格</a></div></div></nav>
+  <nav class="nav"><div class="nav-inner"><a class="brand" href="./">XLE Apps</a><div class="nav-links"><a href="#apps">Apps</a><a href="apps/sleepaudio/">SleepAudio</a><a href="apps/fishbreak/">工位求生</a><a href="apps/blinklog/">秒格</a><a href="apps/jotted/">记了</a></div></div></nav>
   <main>
     <section class="hero">
       <div class="hero-card">
         <p class="eyebrow">Public pages for our apps</p>
         <h1>把每个小产品，都放到一个公开页面。</h1>
-        <p class="lead">这里会收纳我们发布的 App：功能、使用场景、隐私说明和上架材料入口。目前包含睡眠声音 SleepAudio、工位求生：摸鱼模式和秒格 Blinklog。</p>
+        <p class="lead">这里会收纳我们的 App：功能、使用场景、隐私说明和上架材料入口。目前包含睡眠声音 SleepAudio、工位求生：摸鱼模式、秒格 Blinklog，以及准备上架的<span class="name">记了 Jotted</span>。</p>
         <div class="cta-row"><a class="btn primary" href="#apps">全部 App</a><a class="btn secondary" href="apps/fishbreak/">查看工位求生</a></div>
       </div>
     </section>
     <section class="section" id="apps">
       <div class="container">
         <h2>Apps</h2>
-        <p class="section-sub">当前公开的产品列表。后续新 App 会继续追加到这里。</p>
+        <p class="section-sub">当前的产品页面。记了正在准备上架，其余 App 可进入各自的介绍页。</p>
         <div class="apps-grid">
           <article class="app-card">
             <div>
@@ -47,10 +57,18 @@
             </div>
             <a class="link" href="apps/blinklog/">了解更多 ›</a>
           </article>
+          <article class="app-card">
+            <div>
+              <div class="app-icon jotted-mark" aria-hidden="true">记</div>
+              <h3>记了 Jotted</h3>
+              <p>为同一件任务持续追加进展，并保留时间线。支持搜索、本地提醒和手动备份。准备上架，敬请期待。</p>
+            </div>
+            <a class="link" href="apps/jotted/">了解更多 ›</a>
+          </article>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="footer-inner"><div>© XLE Apps</div><div><a href="privacy/sleepaudio.html">SleepAudio Privacy</a> · <a href="privacy/fishbreak.html">FishBreak Privacy</a> · <a href="privacy/blinklog.html">Blinklog Privacy</a></div></div><p class="beian"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2025064691号-2</a></p></footer>
+  <footer class="footer"><div class="footer-inner"><div>© XLE Apps</div><div><a href="privacy/sleepaudio.html">SleepAudio Privacy</a> · <a href="privacy/fishbreak.html">FishBreak Privacy</a> · <a href="privacy/blinklog.html">Blinklog Privacy</a> · <a href="https://archy.top/privacy/jotted.html">记了隐私政策</a></div></div><p class="beian"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2025064691号-2</a></p></footer>
 </body>
 </html>
